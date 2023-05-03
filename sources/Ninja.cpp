@@ -23,33 +23,3 @@ void Ninja::slash(Character* enemy)
         enemy->hit(31);
     }
 }
-
-class YoungNinja : public Ninja {
-public:
-    // Constructor for YoungNinja
-    YoungNinja(const std::string& name, const Point& location)
-        : Ninja(name, location, 14)
-    {
-        setHitPoints(100);
-    }
-};
-
-class TrainedNinja : public Ninja {
-public:
-    // Constructor for TrainedNinja
-    TrainedNinja(const std::string& name, const Point& location)
-        : Ninja(name, location, 12)
-    {
-        setHitPoints(120);
-    }
-};
-
-class OldNinja : public Ninja {
-public:
-    // Constructor for OldNinja
-    OldNinja(const std::string& name, const Point& location)
-        : Ninja(name, location, 8)
-    {
-        setHitPoints(150);
-    }
-};

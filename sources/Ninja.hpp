@@ -2,7 +2,6 @@
 #define NINJA_HPP
 
 #include "Character.hpp"
-#include "Point.hpp"
 #include <string>
 
 namespace ariel{
@@ -21,23 +20,6 @@ namespace ariel{
     protected:
         int m_speed;
     };
-
-    class YoungNinja : public Ninja {
-    public:
-        // Constructor for YoungNinja
-        YoungNinja(const std::string& name, const Point& location);
-    };
-
-    class TrainedNinja : public Ninja {
-    public:
-        // Constructor for TrainedNinja
-        TrainedNinja(const std::string& name, const Point& location);
-    };
-
-    class OldNinja : public Ninja {
-    public:
-        // Constructor for OldNinja
-        OldNinja(const std::string& name, const Point& location);
-    };
 };
+
 #endif // NINJA_HPP
