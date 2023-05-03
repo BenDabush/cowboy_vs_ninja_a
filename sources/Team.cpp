@@ -81,7 +81,7 @@ void Team::attack(Team* enemyGroup) {
     }
 }
 
-int Team::isAlive() const {
+int Team::stillAlive() const {
     int aliveCount = 0;
     for (Character* fighter : m_fighters) {
         if (fighter->isAlive()) {
