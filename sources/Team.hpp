@@ -46,7 +46,7 @@ namespace ariel{
         void attack(Team2* enemyGroup);
 
         // Checks if the group is still alive (number of members left alive)
-        int isAlive() const;
+        int stillAlive() const;
 
         // Prints the details of all characters in the group
         void print() const;
@@ -71,7 +71,7 @@ namespace ariel{
         void attack(SmartTeam* enemyGroup);
 
         // Checks if the group is still alive (number of members left alive)
-        int isAlive() const;
+        int stillAlive() const;
 
         // Prints the details of all characters in the group
         void print() const;
