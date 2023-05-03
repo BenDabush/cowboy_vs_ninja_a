@@ -3,6 +3,9 @@
 
 #include "Character.hpp"
 #include "Ninja.hpp"
+#include "YoungNinja.hpp"
+#include "TrainedNinja.hpp"
+#include "OldNinja.hpp"
 #include "Cowboy.hpp"
 #include <vector>
 namespace ariel{
