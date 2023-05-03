@@ -42,11 +42,12 @@ void Character::setHitPoints(int hitPoint){
 }
 
 // Prints the character's details (name, hit points, and location)
-void Character::print() const
+char Character::print() const
 {
-    std::cout << (isAlive() ? "" : "(") << (m_name[0] == 'N' ? "Ninja " : "Morning ") << m_name << ": " << m_hitPoints << " HP, ";
-    m_location.print();
-    std::cout << (isAlive() ? "" : ")");
+    // std::cout << (isAlive() ? "" : "(") << (m_name[0] == 'N' ? "Ninja " : "Morning ") << m_name << ": " << m_hitPoints << " HP, ";
+    // m_location.print();
+    // std::cout << (isAlive() ? "" : ")");
+    return 'a';
 }
 
 

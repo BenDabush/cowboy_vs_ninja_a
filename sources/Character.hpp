@@ -31,7 +31,7 @@ namespace ariel{
             void setHitPoints(int hitPoint);
 
             // Prints the character's details (name, hit points, and location)
-            void print() const;
+            char print() const;
     };
 };
 #endif // CHARACTER_HPP
