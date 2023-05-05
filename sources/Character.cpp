@@ -4,41 +4,44 @@
 
 using namespace ariel;
 // Constructor
-Character::Character(const std::string& name, const Point& location, int hitPoints)
-    : m_name(name), m_location(location), m_hitPoints(hitPoints)
+Character::Character(const std::string& name, const Point& location, int characterHP)
+    : characterName(name), characterLocation(location), characterHP(characterHP)
 {}
 
 // Checks if the character is alive (has more than zero hit points)
 bool Character::isAlive() const
 {
-    return m_hitPoints > 0;
+    return characterHP > 0;
 }
 
 // Calculates the distance between this character and another character
 double Character::distance(const Character* other) const
 {
-    return m_location.distance(other->m_location);
+    return characterLocation.distance(other->characterLocation);
 }
 
 // Subtracts the specified amount of hit points from the character
 void Character::hit(int amount) {
-    m_hitPoints -= amount;
+    characterHP -= amount;
 }
 
 // Returns the name of the character
-std::string Character::getName() const
-{
-    return m_name;
+std::string Character::getName() const {
+    return characterName;
 }
 
 // Returns the location of the character
-Point Character::getLocation() const
-{
-    return m_location;
+int Character::getCharacterHP() const {
+    return characterHP;
+}
+
+// Returns the location of the character
+Point Character::getLocation() const {
+    return characterLocation;
 }
 
 void Character::setHitPoints(int hitPoint){
-    this->m_hitPoints = hitPoint;
+    this->characterHP = hitPoint;
 }
 
 // Prints the character's details (name, hit points, and location)
