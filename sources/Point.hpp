@@ -2,9 +2,21 @@
 #define POINT_HPP
 namespace ariel{
     class Point {
+    private:
+        double xValue;
+        double yValue;
+
     public:
         // Constructor
-        Point(double x, double y);
+        Point(double xValue, double yValue);
+
+        // Getters
+        double getXValue();
+        double getYValue();
+
+        // Setters
+        void setXValue(double xValue);
+        void setYValue(double yValue);
 
         // Calculates the distance between this point and another point
         double distance(const Point& other) const;
@@ -14,10 +26,6 @@ namespace ariel{
 
         // Returns the closest point to the destination point, which is at most the given distance from the source point
         Point moveTowards(const Point& source, const Point& destination, double distance) const;
-
-    private:
-        double m_x;
-        double m_y;
     };
 };
 #endif // POINT_HPP
