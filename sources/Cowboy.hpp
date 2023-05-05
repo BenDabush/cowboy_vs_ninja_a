@@ -7,6 +7,9 @@
 namespace ariel{
 
     class Cowboy : public Character {
+    private:
+        int m_bullets;
+
     public:
         // Constructor for Cowboy
         Cowboy(const std::string& name, const Point& location);
@@ -19,9 +22,6 @@ namespace ariel{
 
         // Reloads the gun with six new bullets
         void reload();
-
-    private:
-        int m_bullets;
     };
 };
 #endif // COWBOY_HPP
