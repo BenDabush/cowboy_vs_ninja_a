@@ -14,8 +14,8 @@ namespace ariel{
         // Constructor
         Team(Character* leader);
 
-        // Destructor
-        ~Team();
+        // // Destructor
+        // ~Team();
 
         // Adds a fighter (cowboy or ninja) to the group
         void add(Character* fighter);
@@ -39,8 +39,8 @@ namespace ariel{
         // Constructor
         Team2(Character* leader);
 
-        // Destructor
-        ~Team2();
+        // // Destructor
+        // ~Team2();
 
         // Adds a fighter (cowboy or ninja) to the group
         void add(Character* fighter);
@@ -64,8 +64,8 @@ namespace ariel{
         // Constructor
         SmartTeam(Character* leader);
 
-        // Destructor
-        ~SmartTeam();
+        // // Destructor
+        // ~SmartTeam();
 
         // Adds a fighter (cowboy or ninja) to the group
         void add(Character* fighter);

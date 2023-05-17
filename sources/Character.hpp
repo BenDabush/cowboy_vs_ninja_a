@@ -5,16 +5,13 @@
 #include <string>
 namespace ariel{
     class Character {
-        protected:
+        private:
             std::string characterName;
             Point characterLocation;
             int characterHP;
         public:
             // Constructor
             Character(const std::string& characterName, const Point& characterLocation, int characterHP);
-
-            // Virtual destructor
-            virtual ~Character() {}
 
             // Checks if the character is alive (has more than zero hit points)
             bool isAlive() const;
@@ -30,6 +27,9 @@ namespace ariel{
 
             // Returns the location of the character
             Point getLocation() const;
+
+            // Returns the location of the character
+            void setLocation(Point newLocation);
 
             // Returns the location of the character
             int getCharacterHP() const;

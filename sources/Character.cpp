@@ -40,6 +40,10 @@ Point Character::getLocation() const {
     return characterLocation;
 }
 
+void Character::setLocation(Point newLocation){
+    this->characterLocation = newLocation;
+}
+
 void Character::setHitPoints(int hitPoint){
     this->characterHP = hitPoint;
 }

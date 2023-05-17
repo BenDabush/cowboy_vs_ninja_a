@@ -12,8 +12,9 @@ void Ninja::move(Character* enemy)
 {
     if (isAlive() && enemy != nullptr) {
         Point destination = enemy->getLocation();
-        Point newLocation = characterLocation.moveTowards(characterLocation, destination, m_speed);
-        characterLocation = newLocation;
+        Point source = this->getLocation();
+        Point newLocation = source.moveTowards(source, destination, m_speed);
+        this->setLocation(newLocation);
     }
 }
 
